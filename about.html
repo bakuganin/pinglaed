@@ -1,12 +1,16 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  --><!--  Last Published: Fri May 03 2024 13:57:41 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  Last Published: Wed Jun 19 2024 13:13:25 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6628e846a15472cbfdc5413b" data-wf-site="6628e846a15472cbfdc540f6">
 <head>
   <meta charset="utf-8">
-  <title>about</title>
-  <meta content="about" property="og:title">
-  <meta content="about" property="twitter:title">
+  <title>О компании: Эксперты в натяжных потолках и интерьере</title>
+  <meta content="Узнайте больше о нашей компании, миссии, ценностях и команде профессионалов. Мы создаем стильные и функциональные интерьеры с натяжными потолками и световыми ре" name="description">
+  <meta content="О компании: Эксперты в натяжных потолках и интерьере" property="og:title">
+  <meta content="Узнайте больше о нашей компании, миссии, ценностях и команде профессионалов. Мы создаем стильные и функциональные интерьеры с натяжными потолками и световыми ре" property="og:description">
+  <meta content="О компании: Эксперты в натяжных потолках и интерьере" property="twitter:title">
+  <meta content="Узнайте больше о нашей компании, миссии, ценностях и команде профессионалов. Мы создаем стильные и функциональные интерьеры с натяжными потолками и световыми ре" property="twitter:description">
+  <meta property="og:type" content="website">
+  <meta content="summary_large_image" name="twitter:card">
   <meta content="width=device-width, initial-scale=1" name="viewport">
-  <meta content="Webflow" name="generator">
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
   <link href="css/webflow.css" rel="stylesheet" type="text/css">
   <link href="css/pinglaed.webflow.css" rel="stylesheet" type="text/css">
@@ -23,11 +27,48 @@
   -moz-osx-font-smoothing: grayscale;
 }
 </style>
+  <script>
+window.addEventListener('load', function () {
+    // Ждем некоторое время перед запуском скрипта (6 секунд)
+    setTimeout(function() {
+      	const currentURL = window.location.href;
+        // Находим блок с идентификатором "services-section"
+        var servicesSection = document.getElementById('services-section');
+        if (servicesSection && currentURL.endsWith('/index.html#services-section')) {
+            // Получаем высоту блока "services-section"
+            var sectionHeight = servicesSection.clientHeight;
+            // Получаем высоту видимой области окна
+            var windowHeight = window.innerHeight;
+            // Вычисляем отступ, чтобы блок был по центру экрана
+            var offset = Math.max(0, (windowHeight - sectionHeight) / 2);
+            // Прокручиваем страницу до блока "services-section" с учетом отступа
+            window.scrollTo({ top: servicesSection.offsetTop - offset, behavior: 'smooth' });
+        }
+    }, 3900); // Укажите время ожидания в миллисекундах
+    // Находим кнопку "Услуги" по ее идентификатору
+    var servicesBtn = document.getElementById('services-btn-menu');
+    // Проверяем, найдена ли кнопка
+    if (servicesBtn) {
+        // Добавляем обработчик события клика
+        servicesBtn.addEventListener('click', function (event) {
+            // Отменяем стандартное действие ссылки
+            event.preventDefault();
+            // Получаем текущий путь URL
+            var currentPath = window.location.pathname;
+            // Переходим на главную страницу с учетом пути
+            window.location.href = '/index.html#services-section';
+        });
+    }
+});
+</script>
 </head>
 <body>
   <div class="main-wrapper">
     <div class="global-styles w-embed">
       <style>
+.udesly-before-after-slider {
+	display: block;
+}
 /* Snippet gets rid of top margin on first element in any rich text*/
 .w-richtext>:first-child {
 	margin-top: 0;
@@ -81,25 +122,71 @@ a {
 }
 </style>
     </div>
-    <div data-collapse="small" data-animation="default" data-duration="450" data-w-id="7f8044ba-9586-1124-c965-b708db69ca21" data-easing="ease-out-quart" data-easing2="ease-out-quart" role="banner" class="navbar_component w-nav">
-      <div class="navbar_container">
-        <a href="index.html" class="navbar_logo-link w-nav-brand"><img src="images/rule-studio-log0-icon_1rule-studio-log0-icon.png" loading="lazy" width="49" data-w-id="7f8044ba-9586-1124-c965-b708db69ca24" alt=""></a>
-        <nav role="navigation" class="navbar_menu overflow-hidden w-nav-menu">
-          <a href="index.html" class="navbar_link w-nav-link">home</a>
-          <a href="about.html" aria-current="page" class="navbar_link w-nav-link w--current">about</a>
-          <a href="projects.html" class="navbar_link w-nav-link">projects</a>
-          <a href="contact.html" class="button-secondary is-menu w-button">contact</a>
-        </nav>
-        <div class="navbar_menu-button w-nav-button">
-          <div class="menu-icon">
-            <div class="menu-icon_line-top"></div>
-            <div class="menu-icon_line-middle">
-              <div class="menu-icon_line-middle-inner"></div>
+    <nav class="navbar">
+      <div class="navbar_container-2">
+        <a href="index.html" class="navbar_logo-wrapper is-desktop w-inline-block">
+          <div class="navbar_logo-word-wrapper is-1"><img loading="lazy" src="images/Euro.svg" alt="" class="navbar_logo-word-image is-1"></div>
+          <div class="navbar_logo-line"></div>
+          <div class="navbar_logo-word-wrapper is-2"><img loading="lazy" src="images/Lagi.svg" alt="" class="navbar_logo-word-image is-2"></div>
+        </a>
+        <a href="#" class="navbar_logo-wrapper is-mobile w-inline-block">
+          <div class="navbar_logo-word-wrapper is-1"><img loading="eager" src="images/E.svg" alt="" class="navbar_logo-word-image is-1"></div>
+          <div class="navbar_logo-line black"></div>
+          <div class="navbar_logo-word-wrapper is-2"><img loading="eager" src="images/L.svg" alt="" class="navbar_logo-word-image is-2"></div>
+        </a>
+        <div class="navbar_right-wrapper">
+          <div class="navbar_right-inner-wrapper">
+            <div data-w-id="ec900362-d636-beed-e4c5-bf545bb22d03" class="navbar_menu-button-2">
+              <div class="navbar_menu-line-top"></div>
+              <div class="navbar_menu-line-middle"></div>
+              <div class="navbar_menu-line-bottom"></div>
             </div>
-            <div class="menu-icon_line-bottom"></div>
+            <a href="form.html" class="button-navigation-cta w-button">Написать</a>
           </div>
         </div>
       </div>
+    </nav>
+    <div class="menu_parent">
+      <div class="menu_right-panel">
+        <div class="menu_tablet-nav-spacer"></div>
+        <a href="index.html" data-w-id="5ddc88ca-5224-be40-969a-b0cf40db901c" class="menu-link-parent w-inline-block">
+          <div class="menu_card-whipe"></div>
+          <div class="menu_click-whipe"></div>
+          <p class="menu_text-link is-1">Главная</p><img src="images/White-arrow-button.svg" loading="lazy" alt="" class="menu_icon-image">
+          <div class="menu_image-wrapper"><img src="images/home-3d-icon_1home-3d-icon.webp" loading="lazy" alt=""></div>
+        </a>
+        <a href="about.html" data-w-id="5ddc88ca-5224-be40-969a-b0cf40db9024" aria-current="page" class="menu-link-parent w-inline-block w--current">
+          <div class="menu_card-whipe"></div>
+          <div class="menu_click-whipe"></div>
+          <p class="menu_text-link is-2">О нас</p><img src="images/White-arrow-button.svg" loading="lazy" alt="" class="menu_icon-image">
+          <div class="menu_image-wrapper"><img src="images/m-3d-icon_1m-3d-icon.webp" loading="lazy" alt=""></div>
+        </a>
+        <a href="#" id="services-btn-menu" data-w-id="5ddc88ca-5224-be40-969a-b0cf40db902c" class="menu-link-parent w-inline-block">
+          <div class="menu_card-whipe"></div>
+          <div class="menu_click-whipe"></div>
+          <p class="menu_text-link is-3">Услуги</p><img src="images/White-arrow-button.svg" loading="lazy" alt="" class="menu_icon-image">
+          <div class="menu_image-wrapper"><img src="images/round-3d-icon_1round-3d-icon.webp" loading="lazy" alt=""></div>
+        </a>
+        <a href="portfolio.html" data-w-id="5ddc88ca-5224-be40-969a-b0cf40db9034" class="menu-link-parent w-inline-block">
+          <div class="menu_card-whipe"></div>
+          <div class="menu_click-whipe"></div>
+          <p class="menu_text-link is-4">Потфолио</p><img src="images/White-arrow-button.svg" loading="lazy" alt="" class="menu_icon-image">
+          <div class="menu_image-wrapper"><img src="images/line-3d-icon_1line-3d-icon.webp" loading="lazy" alt=""></div>
+        </a>
+        <a href="faq.html" data-w-id="5ddc88ca-5224-be40-969a-b0cf40db903c" class="menu-link-parent w-inline-block">
+          <div class="menu_card-whipe"></div>
+          <div class="menu_click-whipe"></div>
+          <p class="menu_text-link is-5">FAQs</p><img src="images/White-arrow-button.svg" loading="lazy" alt="" class="menu_icon-image">
+          <div class="menu_image-wrapper"><img src="images/cube-3d-icon_1cube-3d-icon.webp" loading="lazy" alt=""></div>
+        </a>
+        <a href="contact.html" data-w-id="5ddc88ca-5224-be40-969a-b0cf40db9044" class="menu-link-parent w-inline-block">
+          <div class="menu_card-whipe"></div>
+          <div class="menu_click-whipe"></div>
+          <p class="menu_text-link is-6">Контакт</p><img src="images/White-arrow-button.svg" loading="lazy" alt="" class="menu_icon-image">
+          <div class="menu_image-wrapper"><img src="images/smile-3d-icon_1smile-3d-icon.webp" loading="lazy" alt=""></div>
+        </a>
+      </div>
+      <div class="menu_left-panel"></div>
     </div>
     <div class="page-wrapper">
       <div class="section-generic-hero">
@@ -108,7 +195,7 @@ a {
             <div class="padding-vertical padding-medium">
               <div class="about-hero_component">
                 <div class="margin-bottom margin-medium overflow-hidden">
-                  <h1 style="height:0px" class="h1-hero-load">about</h1>
+                  <h1 style="height:0px" class="h1-hero-load">О нас</h1>
                 </div>
                 <div class="margin-bottom margin-xlarge"><img src="images/arrow_1arrow.png" loading="lazy" width="12" style="height:0px" alt="" class="hero-arrow"></div>
               </div>
@@ -121,7 +208,7 @@ a {
           <div class="container-large">
             <div class="padding-vertical padding-medium">
               <div class="about-hero_image-wrapper">
-                <div style="width:100%;display:flex" class="about-wide-image-panel"></div><img src="images/hero-image-min.png" loading="lazy" sizes="(max-width: 767px) 90vw, 92vw" srcset="images/hero-image-min-p-500.png 500w, images/hero-image-min-p-800.png 800w, images/hero-image-min-p-1080.png 1080w, images/hero-image-min-p-1600.png 1600w, images/hero-image-min-p-2000.png 2000w, images/hero-image-min.png 2392w" alt="">
+                <div style="width:100%;display:flex" class="about-wide-image-panel"></div><img src="images/about-us.webp" loading="lazy" sizes="(max-width: 767px) 90vw, 92vw" srcset="images/about-us-p-500.webp 500w, images/about-us-p-800.webp 800w, images/about-us-p-1080.webp 1080w, images/about-us-p-1600.webp 1600w, images/about-us-p-2000.webp 2000w, images/about-us-p-2600.webp 2600w, images/about-us.webp 2912w" alt="" class="banner-img about-us">
               </div>
             </div>
           </div>
@@ -130,94 +217,510 @@ a {
       <div class="section-about-scrolling overflow-hidden">
         <div class="padding-vertical padding-xxhuge">
           <div class="about-scrolling_component">
-            <h2 class="heading-xxlarge heading-scrolling">bespoke custom architecture</h2>
-            <h2 class="heading-xxlarge heading-scrolling">bespoke custom architecture</h2>
+            <h2 class="heading-xxlarge heading-scrolling">Лучший Сервис - Лучший Сервис -</h2>
+            <h2 class="heading-xxlarge heading-scrolling">Лучший Сервис - Лучший Сервис</h2>
           </div>
         </div>
       </div>
-      <div class="section-home-services">
+      <!-- <section class="uui-section_testimonial17">
+        <div class="uui-page-padding">
+          <div class="uui-container-large">
+            <div class="uui-padding-vertical-xhuge">
+              <div class="uui-max-width-large">
+                <h2 class="uui-heading-medium-2">История</h2>
+                <div class="uui-space-xsmall-2"></div>
+                <div class="uui-text-size-large">Case studies from some of our amazing customers who are building faster.</div>
+              </div>
+              <div data-delay="4000" data-animation="slide" class="uui-testimonial18_component w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="6" data-duration="500" data-infinite="false">
+                <div class="uui-testimonial18_mask w-slider-mask">
+                  <div class="uui-testimonial18_slide w-slide">
+                    <div class="uui-testimonial18_content background-color-primary600">
+                      <div class="uui-testimonial18_logo-wrapper"><img src="images/layers-white.svg" loading="lazy" alt="Testimonial logo" class="uui-testimonial17_logo"></div>
+                      <div class="uui-testimonial18_content-wrapper">
+                        <div class="uui-heading-small text-color-white">Layers</div>
+                        <div class="uui-space-xsmall-2"></div>
+                        <div class="uui-text-size-medium-2 text-color-white">“Untitled has saved us thousands of hours of work. We’re able to spin up projects faster.”</div>
+                        <div class="uui-space-small"></div>
+                        <div class="uui-space-medium"></div>
+                        <div class="uui-button-row">
+                          <a href="#" class="uui-button-link is-alternate w-inline-block">
+                            <div>Read case study</div>
+                            <div class="uui-button-icon w-embed"><svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.83301 14.1668L14.1663 5.8335M14.1663 5.8335H5.83301M14.1663 5.8335V14.1668" stroke="currentColor" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
+                              </svg></div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uui-testimonial18_slide w-slide">
+                    <div class="uui-testimonial18_content background-color-blue600">
+                      <div class="uui-testimonial18_logo-wrapper"><img src="images/circooles-white.svg" loading="lazy" alt="Testimonial logo" class="uui-testimonial17_logo"></div>
+                      <div class="uui-testimonial18_content-wrapper">
+                        <div class="uui-heading-small text-color-white">Circooles</div>
+                        <div class="uui-space-xsmall-2"></div>
+                        <div class="uui-text-size-medium-2 text-color-white">“Love the simplicity of the service and the prompt customer support.”</div>
+                        <div class="uui-space-small"></div>
+                        <div class="uui-space-medium"></div>
+                        <div class="uui-button-row">
+                          <a href="#" class="uui-button-link is-alternate w-inline-block">
+                            <div>Read case study</div>
+                            <div class="uui-button-icon w-embed"><svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.83301 14.1668L14.1663 5.8335M14.1663 5.8335H5.83301M14.1663 5.8335V14.1668" stroke="currentColor" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
+                              </svg></div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uui-testimonial18_slide w-slide">
+                    <div class="uui-testimonial18_content background-color-indigo600">
+                      <div class="uui-testimonial18_logo-wrapper"><img src="images/catalog-white.svg" loading="lazy" alt="Testimonial logo" class="uui-testimonial17_logo"></div>
+                      <div class="uui-testimonial18_content-wrapper">
+                        <div class="uui-heading-small text-color-white">Catalog</div>
+                        <div class="uui-space-xsmall-2"></div>
+                        <div class="uui-text-size-medium-2 text-color-white">“Untitled has saved us thousands of hours of work. We’re able to spin up projects faster.”</div>
+                        <div class="uui-space-small"></div>
+                        <div class="uui-space-medium"></div>
+                        <div class="uui-button-row">
+                          <a href="#" class="uui-button-link is-alternate w-inline-block">
+                            <div>Read case study</div>
+                            <div class="uui-button-icon w-embed"><svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.83301 14.1668L14.1663 5.8335M14.1663 5.8335H5.83301M14.1663 5.8335V14.1668" stroke="currentColor" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
+                              </svg></div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uui-testimonial18_slide w-slide">
+                    <div class="uui-testimonial18_content background-color-pink600">
+                      <div class="uui-testimonial18_logo-wrapper"><img src="images/quotient-white.svg" loading="lazy" alt="Testimonial logo" class="uui-testimonial17_logo"></div>
+                      <div class="uui-testimonial18_content-wrapper">
+                        <div class="uui-heading-small text-color-white">Quotient</div>
+                        <div class="uui-space-xsmall-2"></div>
+                        <div class="uui-text-size-medium-2 text-color-white">“We’ve been using Untitled to kick start every new project and can’t work without it.”</div>
+                        <div class="uui-space-small"></div>
+                        <div class="uui-space-medium"></div>
+                        <div class="uui-button-row">
+                          <a href="#" class="uui-button-link is-alternate w-inline-block">
+                            <div>Read case study</div>
+                            <div class="uui-button-icon w-embed"><svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.83301 14.1668L14.1663 5.8335M14.1663 5.8335H5.83301M14.1663 5.8335V14.1668" stroke="currentColor" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
+                              </svg></div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uui-testimonial18_slide w-slide">
+                    <div class="uui-testimonial18_content background-color-lightblue600">
+                      <div class="uui-testimonial18_logo-wrapper"><img src="images/hourglass-white.svg" loading="lazy" alt="Testimonial logo" class="uui-testimonial17_logo"></div>
+                      <div class="uui-testimonial18_content-wrapper">
+                        <div class="uui-heading-small text-color-white">Hourglass</div>
+                        <div class="uui-space-xsmall-2"></div>
+                        <div class="uui-text-size-medium-2 text-color-white">“Love the simplicity of the service and the prompt customer support.”</div>
+                        <div class="uui-space-small"></div>
+                        <div class="uui-space-medium"></div>
+                        <div class="uui-button-row">
+                          <a href="#" class="uui-button-link is-alternate w-inline-block">
+                            <div>Read case study</div>
+                            <div class="uui-button-icon w-embed"><svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.83301 14.1668L14.1663 5.8335M14.1663 5.8335H5.83301M14.1663 5.8335V14.1668" stroke="currentColor" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
+                              </svg></div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uui-testimonial18_slide w-slide">
+                    <div class="uui-testimonial18_content background-color-orange600">
+                      <div class="uui-testimonial18_logo-wrapper"><img src="images/command-r-white.svg" loading="lazy" alt="Testimonial logo" class="uui-testimonial17_logo"></div>
+                      <div class="uui-testimonial18_content-wrapper">
+                        <div class="uui-heading-small text-color-white">Command+R</div>
+                        <div class="uui-space-xsmall-2"></div>
+                        <div class="uui-text-size-medium-2 text-color-white">“Love the simplicity of the service and the prompt customer support.”</div>
+                        <div class="uui-space-small"></div>
+                        <div class="uui-space-medium"></div>
+                        <div class="uui-button-row">
+                          <a href="#" class="uui-button-link is-alternate w-inline-block">
+                            <div>Read case study</div>
+                            <div class="uui-button-icon w-embed"><svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.83301 14.1668L14.1663 5.8335M14.1663 5.8335H5.83301M14.1663 5.8335V14.1668" stroke="currentColor" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
+                              </svg></div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="uui-testimonial18_arrow left w-slider-arrow-left">
+                  <div class="uui-button-icon w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg></div>
+                </div>
+                <div class="uui-testimonial18_arrow w-slider-arrow-right">
+                  <div class="uui-button-icon w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg></div>
+                </div>
+                <div class="uui-testimonial18_slide-nav w-slider-nav w-round"></div>
+                <div class="slide-nav-styling-embed w-embed">
+                  <style>
+/* Change color of the default dot by replacing the hex code*/
+.w-slider-dot {
+background-color: #F2F4F7;
+width: 0.625rem;
+height: 0.625rem;
+}
+/* Change color of the active dot by replacing the hex code*/
+.w-slider-dot.w-active {
+background-color: #6941C6;
+width: 0.625rem;
+height: 0.625rem;
+}
+</style>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <div class="f-section-large">
+        <div class="f-container-regular">
+          <div class="f-team-title-wrapper-left">
+            <h3 class="f-h3-heading">Руководство и сотрудники</h3>
+            <div class="f-margin-bottom-12">
+              <div class="f-heading-detail-small">Наша команда состоит из опытнейших специалистов, каждый из которых имеет более десятилетнего стажа в своей области. Все наши профессионалы глубоко вовлечены в ключевые процессы компании, обеспечивая высочайший уровень сервиса и качества.<br><br>Мы стремимся предоставлять нашим клиентам и партнерам только самое лучшее, ведь знаем, что возможности для совершенствования безграничны.</div>
+            </div>
+          </div>
+          <div class="w-layout-grid f-team-grid">
+            <a href="#" class="f-team-card-outline w-inline-block">
+              <div class="f-team-avatar"><img src="images/Avatar-01.png" loading="lazy" alt="" class="f-avatar-image"></div>
+              <div class="f-team-detail-wrapper">
+                <div class="f-paragraph-regular f-text-weight-medium">Oliver Smith</div>
+                <div class="f-paragraph-small">Руководитель</div>
+              </div>
+            </a>
+            <a href="#" class="f-team-card-outline w-inline-block">
+              <div class="f-team-avatar"><img src="images/Avatar-02.png" loading="lazy" alt="" class="f-avatar-image"></div>
+              <div class="f-team-detail-wrapper">
+                <div class="f-paragraph-regular f-text-weight-medium">Sarah Smith</div>
+                <div class="f-paragraph-small">Отдел контроля качества</div>
+              </div>
+            </a>
+            <a href="#" class="f-team-card-outline w-inline-block">
+              <div class="f-team-avatar"><img src="images/Avatar-03.png" loading="lazy" alt="" class="f-avatar-image"></div>
+              <div class="f-team-detail-wrapper">
+                <div class="f-paragraph-regular f-text-weight-medium">Kate Smith</div>
+                <div class="f-paragraph-small">Член правления</div>
+              </div>
+            </a>
+            <a href="#" class="f-team-card-outline w-inline-block">
+              <div class="f-team-avatar"><img src="images/Avatar-04.png" loading="lazy" alt="" class="f-avatar-image"></div>
+              <div class="f-team-detail-wrapper">
+                <div class="f-paragraph-regular f-text-weight-medium">John Smith</div>
+                <div class="f-paragraph-small">Консультант-замерщик</div>
+              </div>
+            </a>
+            <a href="#" class="f-team-card-outline w-inline-block">
+              <div class="f-team-avatar"><img src="images/Avatar-05.png" loading="lazy" alt="" class="f-avatar-image"></div>
+              <div class="f-team-detail-wrapper">
+                <div class="f-paragraph-regular f-text-weight-medium">John Smith</div>
+                <div class="f-paragraph-small">Сотрудник</div>
+              </div>
+            </a>
+            <a href="#" class="f-team-card-outline w-inline-block">
+              <div class="f-team-avatar"><img src="images/Avatar-06.png" loading="lazy" alt="" class="f-avatar-image"></div>
+              <div class="f-team-detail-wrapper">
+                <div class="f-paragraph-regular f-text-weight-medium">Mary Smith</div>
+                <div class="f-paragraph-small">Сотрудник</div>
+              </div>
+            </a>
+            <a href="#" class="f-team-card-outline w-inline-block">
+              <div class="f-team-avatar"><img src="images/Avatar-07.png" loading="lazy" alt="" class="f-avatar-image"></div>
+              <div class="f-team-detail-wrapper">
+                <div class="f-paragraph-regular f-text-weight-medium">Oliver Smith</div>
+                <div class="f-paragraph-small">Сотрудник</div>
+              </div>
+            </a>
+            <a href="#" class="f-team-card-outline w-inline-block">
+              <div class="f-team-avatar"><img src="images/Avatar-08.png" loading="lazy" alt="" class="f-avatar-image"></div>
+              <div class="f-team-detail-wrapper">
+                <div class="f-paragraph-regular f-text-weight-medium">John Smith</div>
+                <div class="f-paragraph-small">Член правления</div>
+              </div>
+            </a>
+            <a id="w-node-_68208c12-e869-b6a3-5104-3b23071a3f8a-fdc5413b" href="#" class="f-team-card-outline w-inline-block">
+              <div class="f-team-avatar"><img src="images/Avatar-09.png" loading="lazy" alt="" class="f-avatar-image"></div>
+              <div class="f-team-detail-wrapper">
+                <div class="f-paragraph-regular f-text-weight-medium">Sarah Smith</div>
+                <div class="f-paragraph-small">Отдел контроля качества</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div data-w-id="c881bd26-71fe-1ad6-ab75-273bb448a451" class="section-home-projects">
         <div class="page-padding">
           <div class="container-large">
-            <div class="padding-vertical padding-xxhuge">
-              <div class="home-service_wrapper">
-                <div class="margin-bottom margin-xlarge">
-                  <h2>services</h2>
-                </div>
-                <div data-current="Tab 1" data-easing="ease" data-duration-in="300" data-duration-out="100" class="tabs w-tabs">
-                  <div class="tabs-menu w-tab-menu">
-                    <a data-w-tab="Tab 1" class="home-service-tabl-link button-text text-align-left w-inline-block w-tab-link w--current">
-                      <div class="home-service-tabs_icon-wrapper"><img width="52" alt="" src="images/logo-pattern-1.png" loading="lazy" class="home-service-tab-image"></div>
-                      <div>new builds</div>
-                    </a>
-                    <a data-w-tab="Tab 2" class="home-service-tabl-link button-text text-align-left w-inline-block w-tab-link">
-                      <div class="home-service-tabs_icon-wrapper"><img width="52" alt="" src="images/logo-pattern-1.png" loading="lazy" class="home-service-tab-image"></div>
-                      <div>exisiting builds</div>
-                    </a>
-                    <a data-w-tab="Tab 3" class="home-service-tabl-link button-text text-align-left w-inline-block w-tab-link">
-                      <div class="home-service-tabs_icon-wrapper"><img width="52" alt="" src="images/logo-pattern-1.png" loading="lazy" class="home-service-tab-image"></div>
-                      <div>corporate</div>
-                    </a>
+            <div class="padding-vertical">
+              <div class="tittle-header">
+                <h2 class="heading-16">Наши работы</h2>
+                <p class="paragraph-10">Мы работали над потолками для более 5000+ клиентов. Предварительный просмотр нашей работы смотрите ниже.</p>
+              </div>
+              <div class="puzzle-div">
+                <div data-w-id="ba5a7d8b-f10d-df48-b211-ce44a79cfd3d" class="box"></div>
+                <div data-w-id="851d414b-2d4e-993a-f48f-d1172d3f02b7" class="box _2"></div>
+                <div data-w-id="574b8af3-3167-1a05-be6c-fe9abd59f72d" class="box _3"></div>
+                <div data-w-id="d75cfa83-099d-8341-4e0f-641f29aec928" class="box _4"></div>
+                <div data-w-id="d80ec175-5eda-86f4-e7f6-f1c91660c171" class="box _5"></div>
+              </div>
+              <div class="centred-holder">
+                <a href="portfolio.html" class="button w-button">Смотреть</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="section_layout">
+        <div class="page-padding">
+          <div class="about-container-large">
+            <div class="padding-vertical-xhuge">
+              <div class="about-layout_component">
+                <div class="uui-text-align-center">
+                  <div class="faq-max-width-large">
+                    <div class="about-button-row button-row-center">
+                      <div class="uui-badge is-primary">
+                        <div class="text-block-16">Наши преимущества</div>
+                      </div>
+                    </div>
+                    <div class="space-xsmall"></div>
+                    <h2 class="about-sec-heading-medium">Мы предлагаем</h2>
+                    <div class="space-xsmall"></div>
+                    <div class="about-sec-text-size-large">Узнайте, почему наши натяжные потолки пользуются популярностью: высокое качество, широкий ассортимент, профессиональный монтаж и отличное обслуживание.</div>
                   </div>
-                  <div class="home-service_tab-content w-tab-content">
-                    <div data-w-tab="Tab 1" class="home-service-tab w-tab-pane w--tab-active">
-                      <div class="w-layout-grid home-service_grid">
-                        <div id="w-node-_324626d7-3477-92c4-30ff-c846d5acb74d-fdc5413b" class="home-service_image-wrapper"><img width="647" alt="" src="images/tab-2-min.png" loading="lazy"></div>
-                        <div id="w-node-_324626d7-3477-92c4-30ff-c846d5acb74f-fdc5413b" class="home-service_content">
-                          <div class="margin-bottom margin-small">
-                            <h3>new</h3>
-                          </div>
-                          <div class="margin-bottom margin-medium">
-                            <p>We are a bespoke architect firm that helps people build their new dream home. We specialize in designing and constructing beautiful, one-of-a-kind homes that perfectly match our clients&#x27; needs and lifestyles. Our team of experienced architects will work with you to create a custom design for your new home that is both stylish and functional. We also offer a wide range of construction services to ensure that your new home is built with the highest quality materials</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div data-w-tab="Tab 2" class="w-tab-pane">
-                      <div class="w-layout-grid home-service_grid">
-                        <div id="w-node-_324626d7-3477-92c4-30ff-c846d5acb758-fdc5413b" class="home-service_image-wrapper"><img width="647" alt="" src="images/tab-3-min.png" loading="lazy"></div>
-                        <div id="w-node-_324626d7-3477-92c4-30ff-c846d5acb75a-fdc5413b" class="home-service_content">
-                          <div class="margin-bottom margin-small">
-                            <h3>existing</h3>
-                          </div>
-                          <div class="margin-bottom margin-medium">
-                            <p>We are a bespoke architect firm that helps people fix their old homes and turn them into their dream home. We believe that everyone should be able to have a beautiful home, regardless of their budget. We offer a wide range of services, from simple repairs to full-scale remodeling, so that we can cater to everyone&#x27;s needs.</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div data-w-tab="Tab 3" class="w-tab-pane">
-                      <div class="w-layout-grid home-service_grid">
-                        <div id="w-node-_324626d7-3477-92c4-30ff-c846d5acb763-fdc5413b" class="home-service_image-wrapper"><img width="647" alt="" src="images/tab-1-min.png" loading="lazy"></div>
-                        <div id="w-node-_324626d7-3477-92c4-30ff-c846d5acb765-fdc5413b" class="home-service_content">
-                          <div class="margin-bottom margin-small">
-                            <h3>corporate</h3>
-                          </div>
-                          <div class="margin-bottom margin-medium">
-                            <p>We are a bespoke architect firm that offers to build your dream office building. We specialize in creating unique and innovative office spaces that reflect the company&#x27;s brand and culture. We take pride in our work and are committed to delivering quality architecture that meets the client&#x27;s needs and budget.</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                </div>
+                <div class="w-layout-grid about-layout_list">
+                  <div class="about-layout_item"><img src="images/House-icon.svg" loading="lazy" alt="Integration icon" class="about-layout_icon">
+                    <div class="space-xsmall"></div>
+                    <h3 class="heading-xxsmall">Комплексность</h3>
+                    <div class="space-xxsmall"></div>
+                    <div class="about-text-size-medium">Все для создания натяжных потолков и световых решений</div>
+                  </div>
+                  <div class="about-layout_item"><img src="images/Light-bulb.svg" loading="lazy" alt="Integration icon" class="about-layout_icon">
+                    <div class="space-xsmall"></div>
+                    <h3 class="heading-xxsmall">Световые решения</h3>
+                    <div class="space-xxsmall"></div>
+                    <div class="about-text-size-medium">Закладные детали для осветительных приборов, датчиков.</div>
+                  </div>
+                  <div class="about-layout_item"><img src="images/Wrench.svg" loading="lazy" alt="Integration icon" class="about-layout_icon">
+                    <div class="space-xsmall"></div>
+                    <h3 class="heading-xxsmall">Удобство</h3>
+                    <div class="space-xxsmall"></div>
+                    <div class="about-text-size-medium">Маскировочные ленты (белые/цветные) для аккуратного скрытия швов и стыков.</div>
+                  </div>
+                  <div class="about-layout_item"><img src="images/Paint-palette.svg" loading="lazy" alt="Integration icon" class="about-layout_icon">
+                    <div class="space-xsmall"></div>
+                    <h3 class="heading-xxsmall">Инструменты</h3>
+                    <div class="space-xxsmall"></div>
+                    <div class="about-text-size-medium">Инструменты и крепеж для монтажа натяжных потолков</div>
+                  </div>
+                  <div class="about-layout_item"><img src="images/Ruler.svg" loading="lazy" alt="Integration icon" class="about-layout_icon">
+                    <div class="space-xsmall"></div>
+                    <h3 class="heading-xxsmall">Индивидуальные решения</h3>
+                    <div class="space-xxsmall"></div>
+                    <div class="about-text-size-medium">Разработка и установка натяжных потолков по индивидуальным проектам.</div>
+                  </div>
+                  <div class="about-layout_item"><img src="images/cup-star.svg" loading="lazy" alt="Integration icon" class="about-layout_icon">
+                    <div class="space-xsmall"></div>
+                    <h3 class="heading-xxsmall">Высокое качество</h3>
+                    <div class="space-xxsmall"></div>
+                    <div class="about-text-size-medium">Используем только высококачественные материалы и новейшие технологии.</div>
+                  </div>
+                </div>
+                <div class="about-button-row button-row-center is-reverse-mobile-landscape">
+                  <div class="about-button-wrapper max-width-full-mobile-landscape">
+                    <a href="/form.html" class="button w-button">Заказать</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+      <section class="faq-section_faq03">
+        <div class="faq-page-padding">
+          <div class="faq-container-large">
+            <div class="faq-padding-vertical-xhuge">
+              <div class="faq-max-width-large">
+                <div class="uui-heading-subheading">Качество гарантировано</div>
+                <h2 class="uui-heading-medium">Наши Сертификаты</h2>
+                <div class="uui-space-xsmall"></div>
+                <div class="faq-text-size-large">Мы предоставляем высококачественные натяжные потолки, что подтверждается нашими сертификатами. Ознакомьтесь с документами, подтверждающими соответствие нашей продукции международным стандартам.</div>
+              </div>
+              <div class="faq03_component">
+                <div class="uui-faq03_list">
+                  <div class="uui-faq03_content">
+                    <div class="uui-faq03_question">
+                      <div class="uui-faq03_heading"><strong>Сертификат ...</strong></div>
+                      <div class="uui-text-size-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pellentesque et nibh at consequat.</div>
+                    </div>
+                    <div id="w-node-_1fd70a5c-e612-5889-df59-bb46e6351f19-e6351f04" class="wrapper-img-about">
+                      <div data-w-id="1fd70a5c-e612-5889-df59-bb46e6351f1a" class="certificate-container">
+                        <a href="#" class="lightbox-link w-inline-block w-lightbox"><img src="https://d3e54v103j8qbb.cloudfront.net/img/placeholder-thumb.svg" loading="lazy" alt="" class="image-11">
+                          <script type="application/json" class="w-json">{
+  "items": [],
+  "group": ""
+}</script>
+                        </a>
+                      </div>
+                      <div data-w-id="1fd70a5c-e612-5889-df59-bb46e6351f1d" class="certificate-container">
+                        <a href="#" class="lightbox-link w-inline-block w-lightbox"><img src="https://d3e54v103j8qbb.cloudfront.net/img/placeholder-thumb.svg" loading="lazy" alt="" class="image-11">
+                          <script type="application/json" class="w-json">{
+  "items": [],
+  "group": ""
+}</script>
+                        </a>
+                      </div>
+                      <div data-w-id="1fd70a5c-e612-5889-df59-bb46e6351f20" class="certificate-container">
+                        <a href="#" class="lightbox-link w-inline-block w-lightbox"><img src="https://d3e54v103j8qbb.cloudfront.net/img/placeholder-thumb.svg" loading="lazy" alt="" class="image-11">
+                          <script type="application/json" class="w-json">{
+  "items": [],
+  "group": ""
+}</script>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uui-faq03_content">
+                    <div class="uui-faq03_question">
+                      <div class="uui-faq03_heading"><strong>Сертификат ...</strong></div>
+                      <div class="uui-text-size-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pellentesque et nibh at consequat.</div>
+                    </div>
+                    <div id="w-node-_1fd70a5c-e612-5889-df59-bb46e6351f2a-e6351f04" class="wrapper-img-about">
+                      <div data-w-id="1fd70a5c-e612-5889-df59-bb46e6351f2b" class="certificate-container">
+                        <a href="#" class="lightbox-link w-inline-block w-lightbox"><img src="https://d3e54v103j8qbb.cloudfront.net/img/placeholder-thumb.svg" loading="lazy" alt="" class="image-11">
+                          <script type="application/json" class="w-json">{
+  "items": [],
+  "group": ""
+}</script>
+                        </a>
+                      </div>
+                      <div data-w-id="1fd70a5c-e612-5889-df59-bb46e6351f2e" class="certificate-container">
+                        <a href="#" class="lightbox-link w-inline-block w-lightbox"><img src="https://d3e54v103j8qbb.cloudfront.net/img/placeholder-thumb.svg" loading="lazy" alt="" class="image-11">
+                          <script type="application/json" class="w-json">{
+  "items": [],
+  "group": ""
+}</script>
+                        </a>
+                      </div>
+                      <div data-w-id="1fd70a5c-e612-5889-df59-bb46e6351f31" class="certificate-container">
+                        <a href="#" class="lightbox-link w-inline-block w-lightbox"><img src="https://d3e54v103j8qbb.cloudfront.net/img/placeholder-thumb.svg" loading="lazy" alt="" class="image-11">
+                          <script type="application/json" class="w-json">{
+  "items": [],
+  "group": ""
+}</script>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uui-faq03_content">
+                    <div class="uui-faq03_question">
+                      <div class="uui-faq03_heading"><strong>Сертификат ...</strong></div>
+                      <div class="uui-text-size-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pellentesque et nibh at consequat.</div>
+                    </div>
+                    <div id="w-node-_1fd70a5c-e612-5889-df59-bb46e6351f3b-e6351f04" class="wrapper-img-about">
+                      <div data-w-id="1fd70a5c-e612-5889-df59-bb46e6351f3c" class="certificate-container">
+                        <a href="#" class="lightbox-link w-inline-block w-lightbox"><img src="https://d3e54v103j8qbb.cloudfront.net/img/placeholder-thumb.svg" loading="lazy" alt="" class="image-11">
+                          <script type="application/json" class="w-json">{
+  "items": [],
+  "group": ""
+}</script>
+                        </a>
+                      </div>
+                      <div data-w-id="1fd70a5c-e612-5889-df59-bb46e6351f3f" class="certificate-container">
+                        <a href="#" class="lightbox-link w-inline-block w-lightbox"><img src="https://d3e54v103j8qbb.cloudfront.net/img/placeholder-thumb.svg" loading="lazy" alt="" class="image-11">
+                          <script type="application/json" class="w-json">{
+  "items": [],
+  "group": ""
+}</script>
+                        </a>
+                      </div>
+                      <div data-w-id="1fd70a5c-e612-5889-df59-bb46e6351f42" class="certificate-container">
+                        <a href="#" class="lightbox-link w-inline-block w-lightbox"><img src="https://d3e54v103j8qbb.cloudfront.net/img/placeholder-thumb.svg" loading="lazy" alt="" class="image-11">
+                          <script type="application/json" class="w-json">{
+  "items": [],
+  "group": ""
+}</script>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uui-faq03_content">
+                    <div class="uui-faq03_question">
+                      <div class="uui-faq03_heading"><strong>Сертификат ...</strong></div>
+                      <div class="uui-text-size-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pellentesque et nibh at consequat.</div>
+                    </div>
+                    <div id="w-node-_1fd70a5c-e612-5889-df59-bb46e6351f4c-e6351f04" class="wrapper-img-about">
+                      <div data-w-id="1fd70a5c-e612-5889-df59-bb46e6351f4d" class="certificate-container">
+                        <a href="#" class="lightbox-link w-inline-block w-lightbox"><img src="https://d3e54v103j8qbb.cloudfront.net/img/placeholder-thumb.svg" loading="lazy" alt="" class="image-11">
+                          <script type="application/json" class="w-json">{
+  "items": [],
+  "group": ""
+}</script>
+                        </a>
+                      </div>
+                      <div data-w-id="1fd70a5c-e612-5889-df59-bb46e6351f50" class="certificate-container">
+                        <a href="#" class="lightbox-link w-inline-block w-lightbox"><img src="https://d3e54v103j8qbb.cloudfront.net/img/placeholder-thumb.svg" loading="lazy" alt="" class="image-11">
+                          <script type="application/json" class="w-json">{
+  "items": [],
+  "group": ""
+}</script>
+                        </a>
+                      </div>
+                      <div data-w-id="1fd70a5c-e612-5889-df59-bb46e6351f53" class="certificate-container">
+                        <a href="#" class="lightbox-link w-inline-block w-lightbox"><img src="https://d3e54v103j8qbb.cloudfront.net/img/placeholder-thumb.svg" loading="lazy" alt="" class="image-11">
+                          <script type="application/json" class="w-json">{
+  "items": [],
+  "group": ""
+}</script>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="faq03_cta">
+                  <div class="faq03_cta-content">
+                    <div class="faq-max-width-large">
+                      <h4 class="faq-heading-xxsmall">У вас возникли вопросы?</h4>
+                      <div class="faq-space-xxsmall"></div>
+                      <div class="faq-text-size-large-faq">Не можете найти ответ, который ищете? Пожалуйста, пообщайтесь с нашей дружной командой.</div>
+                    </div>
+                  </div>
+                  <div class="faq_cta-button-row">
+                    <a data-w-id="1fd70a5c-e612-5889-df59-bb46e6351f5f" href="/form.html" class="btn-service w-button">Оставить заявку</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <div class="footer_component">
         <div class="page-padding">
           <div class="container-large">
             <div class="padding-vertical padding-large">
               <div class="padding-bottom padding-xxlarge">
                 <div class="w-layout-grid footer_top-wrapper">
-                  <div class="footer_left-wrapper">
+                  <div id="w-node-ff16cdf1-cb87-5662-dc84-4423991f58e5-991f58df" class="footer_left-wrapper">
                     <div class="margin-bottom margin-medium">
-                      <a href="#" class="footer3_logo-link w-nav-brand"><img src="images/rule-studio-min_1rule-studio-min.png" loading="lazy" width="158" alt=""></a>
+                      <a href="#" class="footer3_logo-link w-nav-brand"><img src="images/Euro-Lagi-Black.svg" loading="lazy" width="158" alt="" class="image-9"></a>
                     </div>
                     <div class="margin-bottom margin-medium">
                       <div class="footer3_details-wrapper">
-                        <div class="text-size-small">We are a bespoke architect firm, offering custom solutions for your dream home</div>
+                        <div class="text-size-small">Мы — архитектурная фирма, специализирующаяся на индивидуальном проектировании и предлагающая индивидуальные решения для дома вашей мечты.</div>
                       </div>
                     </div>
                     <div class="w-layout-grid footer_socials-wrapper">
@@ -246,24 +749,26 @@ a {
                   <div class="w-layout-grid footer_column-layout">
                     <div class="footer_column">
                       <a href="#" class="footer_link">site map</a>
-                      <a href="index.html" class="footer_link">home</a>
-                      <a href="about.html" aria-current="page" class="footer_link w--current">about</a>
-                      <a href="projects.html" class="footer_link">projects</a>
-                      <a href="contact.html" class="footer_link">contact</a>
+                      <a href="#" class="footer_link">Главная</a>
+                      <a href="#" class="footer_link">О нас</a>
+                      <a href="#" class="footer_link">Проекты</a>
+                      <a href="#" class="footer_link">Контакты</a>
                     </div>
                   </div>
                   <div class="footer_column">
-                    <a href="#" class="footer_link">contact</a>
-                    <a href="#" class="footer_link">0412 345 678</a>
-                    <a href="#" class="footer_link">info@architect.com</a>
-                    <a href="#" class="footer_link">123 Cliff Street, Australia</a>
+                    <a href="#" class="footer_link"><strong class="bold-text">Контакт. инфо:</strong></a>
+                    <a href="#" class="footer_link">IDA-BUSSID OÜ</a>
+                    <a href="mailto:rahuehitus@gmail.com" class="footer_link"><span class="text-span">info@eurolagi.eu</span></a>
+                    <a href="#" class="footer_link">Ida-Viru, Narva, Malmi tn. 1, 20308</a>
+                    <a href="#" class="footer_link">Reg. No: <span class="text-span-4">12584443</span></a>
+                    <a href="#" class="footer_link">Malmi 1a, Narva, Estonia</a>
                   </div>
                 </div>
               </div>
               <div class="line-divider"></div>
               <div class="padding-top padding-medium">
-                <a href="http://www.jonathanwaterworth.com" class="footer_bottom-wrapper w-inline-block">
-                  <div class="footer_credit-text">Website design &amp; development by www.jonathanwaterworth.com</div>
+                <a href="https://jegorbakunin.webflow.io/" class="footer_bottom-wrapper w-inline-block">
+                  <div class="footer_credit-text">Website design &amp; development by www.jegorbakunin.webflow.io</div>
                 </a>
               </div>
             </div>
@@ -273,6 +778,31 @@ a {
     </div>
   </div>
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6628e846a15472cbfdc540f6" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-  <script src="js/webflow.js" type="text/javascript"></script>
+  <script src="js/webflow.js" type="text/javascript"></script><!--  Плавная прокрутка  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+  <script>
+SmoothScroll({
+// Время скролла 400 = 0.4 секунды
+animationTime : 800,
+// Размер шага в пикселях
+stepSize : 75,
+// Дополнительные настройки:
+// Ускорение
+accelerationDelta : 30,
+// Максимальное ускорение
+accelerationMax : 2,
+// Поддержка клавиатуры
+keyboardSupport : true,
+// Шаг скролла стрелками на клавиатуре в пикселях
+arrowScroll : 50,
+// Pulse (less tweakable)
+// ratio of "tail" to "acceleration"
+pulseAlgorithm : true,
+pulseScale : 4,
+pulseNormalize : 1,
+// Поддержка тачпада
+touchpadSupport : true,
+})
+</script>
 </body>
 </html>
