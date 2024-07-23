@@ -8469,6 +8469,12 @@ figcaption {
   display: flex;
 }
 
+@media (max-width: 768px) {
+  .success-wrap {
+    padding: 10px;
+  }
+}
+
 .question-icon-wrap {
   color: #a7a7d3;
 }
