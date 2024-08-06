@@ -32,39 +32,48 @@
 	.w-webflow-badge 
 	{display: none !important;}
 </style>
-  <script>
-window.addEventListener('load', function () {
-    // Ждем некоторое время перед запуском скрипта (6 секунд)
-    setTimeout(function() {
-      	const currentURL = window.location.href;
-        // Находим блок с идентификатором "services-section"
-        var servicesSection = document.getElementById('services-section');
-        if (servicesSection && currentURL.endsWith('/index.html#services-section')) {
-            // Получаем высоту блока "services-section"
-            var sectionHeight = servicesSection.clientHeight;
-            // Получаем высоту видимой области окна
-            var windowHeight = window.innerHeight;
-            // Вычисляем отступ, чтобы блок был по центру экрана
-            var offset = Math.max(0, (windowHeight - sectionHeight) / 2);
-            // Прокручиваем страницу до блока "services-section" с учетом отступа
-            window.scrollTo({ top: servicesSection.offsetTop - offset, behavior: 'smooth' });
-        }
-    }, 3900); // Укажите время ожидания в миллисекундах
-    // Находим кнопку "Услуги" по ее идентификатору
-    var servicesBtn = document.getElementById('services-btn-menu');
-    // Проверяем, найдена ли кнопка
-    if (servicesBtn) {
-        // Добавляем обработчик события клика
-        servicesBtn.addEventListener('click', function (event) {
-            // Отменяем стандартное действие ссылки
-            event.preventDefault();
-            // Получаем текущий путь URL
-            var currentPath = window.location.pathname;
-            // Переходим на главную страницу с учетом пути
-            window.location.href = '/index.html#services-section';
-        });
-    }
-});
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-REEXJDEMJS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-REEXJDEMJS');
+</script>
+<script>
+  window.addEventListener('load', function () {
+      // Ждем некоторое время перед запуском скрипта (6 секунд)
+      setTimeout(function() {
+          const currentURL = window.location.href;
+          // Находим блок с идентификатором "services-section"
+          var servicesSection = document.getElementById('services-section');
+          if (servicesSection && currentURL.endsWith('/index.html#services-section')) {
+              // Получаем высоту блока "services-section"
+              var sectionHeight = servicesSection.clientHeight;
+              // Получаем высоту видимой области окна
+              var windowHeight = window.innerHeight;
+              // Вычисляем отступ, чтобы блок был по центру экрана
+              var offset = Math.max(0, (windowHeight - sectionHeight) / 2);
+              // Прокручиваем страницу до блока "services-section" с учетом отступа
+              window.scrollTo({ top: servicesSection.offsetTop - offset, behavior: 'smooth' });
+          }
+      }, 3900); // Укажите время ожидания в миллисекундах
+      // Находим кнопку "Услуги" по ее идентификатору
+      var servicesBtn = document.getElementById('services-btn-menu');
+      // Проверяем, найдена ли кнопка
+      if (servicesBtn) {
+          // Добавляем обработчик события клика
+          servicesBtn.addEventListener('click', function (event) {
+              // Отменяем стандартное действие ссылки
+              event.preventDefault();
+              // Получаем текущий путь URL
+              var currentPath = window.location.pathname;
+              // Переходим на главную страницу с учетом пути
+              window.location.href = '/index.html#services-section';
+          });
+      }
+  });
 </script>
   <style>
 .no-scroll {
