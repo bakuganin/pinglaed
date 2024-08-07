@@ -36,6 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
         'Accept': 'application/json'
       }
     }).then(function (response) {
+      console.log(response)
       document.getElementById("BackCall-Form").style.display = "none"
       if (response.ok) {
         document.getElementById("success-form-2").style.display = "block"
