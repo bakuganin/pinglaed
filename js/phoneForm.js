@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-  document.getElementById('BackCall-Form').addEventListener('submit', function (event) {
+  document.getElementById('BackCall-Form')?.addEventListener('submit', function (event) {
     event.preventDefault(); // Предотвращает стандартное поведение формы
 
     var form = event.target;
