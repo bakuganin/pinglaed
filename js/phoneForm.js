@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     };
 
+    console.log('Form action:', form.action);
     fetch(form.action, {
       method: 'POST',
       body: formData,
