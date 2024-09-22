@@ -11,6 +11,32 @@
   ],
   "redirects": [
     { "source": "/calc.html", "destination": "/calc", "permanent": true },
-    { "source": "/index.html", "destination": "/", "permanent": true }
+    { "source": "/index.html", "destination": "/", "permanent": true },
+    { "source": "/about.html", "destination": "/about", "permanent": true },
+    { "source": "/portfolio.html", "destination": "/portfolio", "permanent": true },
+    { "source": "/faq.html", "destination": "/faq", "permanent": true },
+    { "source": "/contact.html", "destination": "/contact", "permanent": true },
+    { "source": "/floor/category-ceiling.html", "destination": "/floor/category-ceiling", "permanent": true },
+    { "source": "/light/category-light.html", "destination": "/light/category-light", "permanent": true },
+    { "source": "/decor/category-decor.html", "destination": "/decor/category-decor", "permanent": true },
+    { "source": "/installing.html", "destination": "/installing", "permanent": true },
+    { "source": "/draining.html", "destination": "/draining", "permanent": true },
+    { "source": "/private-policy.html", "destination": "/private-policy", "permanent": true },
+    { "source": "/documents/A.pdf", "destination": "/documents/A", "permanent": true },
+    { "source": "/documents/BS1D0.PDF", "destination": "/documents/BS1D0", "permanent": true },
+    { "source": "/documents/EN71-3.pdf", "destination": "/documents/EN71-3", "permanent": true },
+    { "source": "/documents/REACH.PDF", "destination": "/documents/REACH", "permanent": true },
+    { "source": "/floor/matte-ceilings.html", "destination": "/floor/matte-ceilings", "permanent": true },
+    { "source": "/floor/glossy-ceilings.html", "destination": "/floor/glossy-ceilings", "permanent": true },
+    { "source": "/floor/satin-ceilings.html", "destination": "/floor/satin-ceilings", "permanent": true },
+    { "source": "/floor/fabric-ceilings.html", "destination": "/floor/fabric-ceilings", "permanent": true },
+    { "source": "/floor/soaring-ceilings.html", "destination": "/floor/soaring-ceilings", "permanent": true },
+    { "source": "/floor/colored-ceilings.html", "destination": "/floor/colored-ceilings", "permanent": true },
+    { "source": "/light/spots.html", "destination": "/light/spots", "permanent": true },
+    { "source": "/light/tracks.html", "destination": "/light/tracks", "permanent": true },
+    { "source": "/light/contour-lighting.html", "destination": "/light/contour-lighting", "permanent": true },
+    { "source": "/light/light-lines.html", "destination": "/light/light-lines", "permanent": true },
+    { "source": "/decor/hidden-cornices.html", "destination": "/decor/hidden-cornices", "permanent": true },
+    { "source": "/decor/tension-walls.html", "destination": "/decor/tension-walls", "permanent": true }
   ]
 }
