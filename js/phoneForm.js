@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
 
-  document.getElementById('ZamerCall-Form').addEventListener('submit', function (event) {
+  document.getElementById('ZamerCall-Form')?.addEventListener('submit', function (event) {
     event.preventDefault(); // Предотвращает стандартное поведение формы
 
     var form = event.target;
@@ -72,7 +72,6 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
 
-    // Выводим имена полей и их значения
     for (const key in data) {
       if (Array.isArray(data[key])) {
         data[key].forEach((val, index) => {
@@ -82,7 +81,6 @@ document.addEventListener('DOMContentLoaded', function () {
         console.log(`${key}: ${data[key]}`);
       }
     };
-
     fetch(form.action, {
       method: 'POST',
       body: formData,
