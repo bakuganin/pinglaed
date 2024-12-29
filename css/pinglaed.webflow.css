@@ -2171,7 +2171,7 @@ figcaption {
   display: none;        /* Все слайды по умолчанию скрыты */
   justify-content: center;
   align-items: center;
-  font-size: 0.9em;
+  font-size: 0.7em;
 }
 
 .slide.active {
