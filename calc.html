@@ -177,6 +177,18 @@
             </style>
         </div>
         <nav class="navbar">
+            <div class="slider">
+
+                <div class="slide active">Бонус-компания: Теневой профиль в подарок</div>
+                <div class="slide">Бонус-компания: Цветные полотна со скидкой 40%</div>
+                <div class="slide">Бонус-компания: Натяжные потолки от 15€ за м2</div>
+
+
+                <div class="controls">
+                    <button id="prev">&#9664;</button>
+                    <button id="next">&#9654;</button>
+                </div>
+            </div>
             <div class="navbar_container-2">
                 <a href="index.html" class="navbar_logo-wrapper is-desktop w-inline-block">
                     <div class="navbar_logo-word-wrapper is-1">
@@ -677,14 +689,14 @@
                                     max="200"
                                     value="1"
                                     step="1"
-                                    class="slider"
+                                    class="sliderInput"
                                     oninput="calculateChange(); updateSliderValue();"
                                     id="productsSlider"
                                 />
                             </div>
                             <div class="slider-styles w-embed">
                                 <style>
-                                    .slider {
+                                    .sliderInput {
                                         -webkit-appearance: none;
                                         width: 100%;
                                         height: 4px;
@@ -694,7 +706,7 @@
                                         -webkit-transition: 0.2s;
                                         transition: 0.2s;
                                     }
-                                    .slider::-webkit-slider-thumb {
+                                    .sliderInput::-webkit-slider-thumb {
                                         -webkit-appearance: none;
                                         appearance: none;
                                         width: 24px;
@@ -703,7 +715,7 @@
                                         background: #1b1b1b;
                                         cursor: pointer;
                                     }
-                                    .slider::-moz-range-thumb {
+                                    .sliderInput::-moz-range-thumb {
                                         width: 24px;
                                         height: 24px;
                                         border-radius: 50%;
