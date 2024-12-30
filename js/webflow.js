@@ -11,7 +11,7 @@
 (() => {
     const slides = document.querySelectorAll('.slide');
     let currentSlide = 0;
-    const slideInterval = 3000; // Интервал автопрокрутки (мс)
+    const slideInterval = 4500; // Интервал автопрокрутки (мс)
 
     function showSlide(index) {
         slides.forEach((slide) => slide.classList.remove('active'));
