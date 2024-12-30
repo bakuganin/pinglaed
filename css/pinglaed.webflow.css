@@ -2178,6 +2178,11 @@ figcaption {
 .slide.active {
   display: flex;        /* Активный слайд показываем */
 }
+@media (max-width: 768px) {
+  .controls {
+    display: none!important; /* Скрываем элементы управления на мобильных устройствах */
+  }
+}
 
 /* Кнопки слева и справа внутри .slider */
 .controls {
