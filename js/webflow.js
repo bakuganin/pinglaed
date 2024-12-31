@@ -9,6 +9,34 @@
 
 
 (() => {
+  document.addEventListener("DOMContentLoaded", function () {
+    const slides = document.querySelectorAll('.slide'); // Все слайды
+    let currentIndex = 0; // Начальный индекс слайда
+    const slideCount = slides.length; // Общее количество слайдов
+
+    // Функция для переключения слайдов
+    function showNextSlide() {
+        // Убираем класс 'active' с текущего слайда
+        slides[currentIndex].classList.remove('active');
+
+        // Увеличиваем индекс слайда, если достигнут последний слайд, возвращаемся к первому
+        currentIndex = (currentIndex + 1) % slideCount;
+
+        // Добавляем класс 'active' на следующий слайд
+        slides[currentIndex].classList.add('active');
+    }
+
+    // Начальный показ первого слайда
+    slides[currentIndex].classList.add('active');
+
+    // Плавное переключение слайдов каждые 5 секунд
+    setInterval(showNextSlide, 5000); // Каждые 5000 мс (5 секунд) переключаем слайды
+});
+
+
+
+
+  
   var __create = Object.create;
   var __defProp = Object.defineProperty;
   var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
