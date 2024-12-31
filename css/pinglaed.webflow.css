@@ -2134,7 +2134,7 @@ figcaption {
 }
 
 .navbar {
-  z-index: 9999;
+  z-index: 98;
   -webkit-backdrop-filter: blur(.5rem);
   backdrop-filter: blur(.5rem);
   background-color: #fff;
@@ -2142,73 +2142,101 @@ figcaption {
   align-items: center;
   width: 100%;
   height: 5.375rem;
-  max-height: 80px;
+  max-height: 75px;
   margin-left: auto;
   margin-right: auto;
   padding: .125rem 5vw;
   display: flex;
   flex-direction: column;
   position: fixed;
-  top: 0%;
+  top: 30px;
   bottom: auto;
   left: auto;
   right: 0%;
+  flex-direction: row;
 }
 
+/* Выделяем проценты и цену */
+.discount {
+  color: rgb(151, 236, 101);
+  font-weight: bold;
+}
+
+.price {
+  color: rgb(151, 236, 101);
+  font-size: 1.2em; /* Увеличиваем размер для цены */
+}
+
+.sqm {
+  font-size: 0.85em; /* Меньший размер для м² */
+}
+
+.sqm-number {
+  #ffff74
+  font-size: 1.5em; /* Увеличиваем число 2 */
+}
+
+.euro-symbol {
+  font-size: 1.2em; /* Увеличиваем символ евро */
+  color:rgb(164, 226, 128);
+}
+
+/* Анимация для бонус-компании с новогодними цветами */
+.bonus-text {
+  letter-spacing: 0.05em;
+  color: #d0ff9e;
+}
+
+
+
+
+/* Контейнер слайдера */
 .slider {
-  position: relative;
-  width: 100%;
-  height: 150px;
-  overflow: hidden;
+  overflow: hidden; /* Прячет часть, выходящую за границы контейнера */
+  background-color: #ff8a56; /* Задний фон слайдера */
+  width: 100%; /* На всю ширину экрана */
+  height: 30px; /* Высота полоски */
+  position: fixed; /* Фиксация сверху */
+  top: 0; /* Привязка к верхнему краю страницы */
+  z-index: 99; /* Поверх навигации */
+  display: flex;
+  align-items: center; /* Вертикальная центровка текста */
+  white-space: nowrap; /* Текст не переносится на следующую строку */
+  color: white; /* Цвет текста */
+  font-size: 14px; /* Размер шрифта */
 }
 
+/* Текст слайдов */
 .slide {
-  position: absolute;   /* Чтобы все слайды помещались друг над другом */
-  top: 0;
-  color: #ff8a56;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: none;        /* Все слайды по умолчанию скрыты */
-  justify-content: center;
-  align-items: center;
-  font-size: 0.85em;
+  display: inline-block; /* Слайды идут в одну линию */
+  flex-shrink: 0; /* Не позволяет слайдам сжиматься */
+  width: 100%; /* Каждый слайд занимает всю ширину контейнера */
+  animation: slide-in 35s linear infinite; /* Добавляем бесконечную анимацию */
 }
 
-.slide.active {
-  display: flex;        /* Активный слайд показываем */
+@keyframes slide-in {
+  0% {
+    transform: translateX(100%);
+  }
+  33.33% {
+    transform: translateX(0);
+  }
+  66.66% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
 }
+
 @media (max-width: 768px) {
-  .controls {
-    display: none!important; /* Скрываем элементы управления на мобильных устройствах */
+  .navbar {
+    max-height: 60px;
   }
   .slide {
-    font-size: 0.8em; /* Уменьшаем размер шрифта */
+    font-size: 0.9em; /* Уменьшаем размер шрифта */
   }
 }
-
-/* Кнопки слева и справа внутри .slider */
-.controls {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  transform: translateY(-50%);
-  display: flex;
-  justify-content: space-between;
-  pointer-events: none; /* Чтобы фон кнопок не мешал клику по слайду */
-}
-
-.controls button {
-  color: rgb(0, 0, 0);
-  background-color: transparent;
-  border: none;
-  font-size: 0.9em;
-  padding: 10px 15px;
-  cursor: pointer;
-  pointer-events: auto; /* Возвращаем возможность клика по кнопке */
-}
-
-
 
 .button-3 {
   grid-column-gap: .75rem;
@@ -2299,7 +2327,7 @@ figcaption {
 
 .menu_left-panel {
   perspective: 1000px;
-  background-color: #b9b9b9;
+  background-color: #b9b9b9d4;
   width: 50%;
   position: relative;
 }
@@ -2309,7 +2337,7 @@ figcaption {
 }
 
 .menu_parent {
-  z-index: 99;
+  z-index: 40;
   width: 100%;
   height: 100vh;
   display: none;
@@ -13437,8 +13465,8 @@ figcaption {
   }
 
   .menu_text-link {
-    letter-spacing: -.03em;
-    font-size: 3.25rem;
+    letter-spacing: -.01em;
+    font-size: 2.55rem;
   }
 
   .menu_left-panel {
