@@ -14912,7 +14912,6 @@ figcaption {
   }
 
   .flex-between-row {
-    flex-flow: wrap;
     align-items: stretch;
   }
 
