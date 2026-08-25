@@ -1,6 +1,22 @@
 {
   "rewrites": [
     {
+      "source": "/documents/A",
+      "destination": "/documents/A.pdf"
+    },
+    {
+      "source": "/documents/BS1D0",
+      "destination": "/documents/BS1D0.PDF"
+    },
+    {
+      "source": "/documents/EN71-3",
+      "destination": "/documents/EN71-3.pdf"
+    },
+    {
+      "source": "/documents/REACH",
+      "destination": "/documents/REACH.PDF"
+    },
+    {
       "source": "/:path*",
       "destination": "/:path*.html"
     },
@@ -10,6 +26,38 @@
     }
   ],
   "redirects": [
+    {
+      "source": "/",
+      "has": [
+        { "type": "host", "value": "eurolagi.vercel.app" }
+      ],
+      "destination": "https://eurolagi.eu/",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        { "type": "host", "value": "eurolagi.vercel.app" }
+      ],
+      "destination": "https://eurolagi.eu/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [
+        { "type": "host", "value": "www.eurolagi.eu" }
+      ],
+      "destination": "https://eurolagi.eu/",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        { "type": "host", "value": "www.eurolagi.eu" }
+      ],
+      "destination": "https://eurolagi.eu/:path*",
+      "permanent": true
+    },
     { "source": "/calc.html", "destination": "/calc", "permanent": true },
     { "source": "/index.html", "destination": "/", "permanent": true },
     { "source": "/about.html", "destination": "/about", "permanent": true },
