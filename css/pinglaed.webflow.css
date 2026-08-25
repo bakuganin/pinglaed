@@ -2209,7 +2209,7 @@ figcaption {
   display: inline-block; /* Слайды идут в одну линию */
   flex-shrink: 0; /* Не позволяет слайдам сжиматься */
   width: 100%; /* Каждый слайд занимает всю ширину контейнера */
-  animation: slide-in 21s linear infinite; /* Добавляем бесконечную анимацию */
+  animation: slide-in 42s linear infinite; /* Более спокойная скорость бегущей строки */
 }
 
 @keyframes slide-in {
